@@ -13,11 +13,12 @@ import {
     SearchIcon,
     ShoppingCartIcon,
 } from '@heroicons/react/outline';
+import HeaderIcon from './HeaderIcon';
 
 
 function Header() {
     return (
-        <div>
+        <div className="flex sticky top-0 z-50 bg-white items-center p-2 lg:px-5 shadow-md">
 
             <div className="flex items-center">
                 <Image
@@ -32,13 +33,22 @@ function Header() {
                         className="h-6 text-gray-600"
                     />
                     <input
-                        className="flex ml-2 items-center 
+                        className="flex flex-shrink ml-2 items-center 
                         outline-none placholder-gray-500 bg-transparent"
                         type='text' placeholder='Search Facebook' />
                 </div>
             </div>
 
+            <div className="flex justify-center flex-grow">
 
+                <div className="flex space-x-6 md:space-x-2">
+                    <HeaderIcon active Icon={HomeIcon} />
+                    <HeaderIcon Icon={FlagIcon} />
+                    <HeaderIcon Icon={PlayIcon} />
+                    <HeaderIcon Icon={ShoppingCartIcon} />
+                    <HeaderIcon Icon={UserGroupIcon} />
+                </div>
+            </div>
             {/* HeaderCenter */}
 
 
