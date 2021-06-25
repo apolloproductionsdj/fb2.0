@@ -33,7 +33,7 @@ function Header() {
                         className="h-6 text-gray-600"
                     />
                     <input
-                        className="flex flex-shrink ml-2 items-center 
+                        className="flex flex-shrink hidden md:inline-flex ml-2 items-center 
                         outline-none placholder-gray-500 bg-transparent"
                         type='text' placeholder='Search Facebook' />
                 </div>
@@ -49,10 +49,17 @@ function Header() {
                     <HeaderIcon Icon={UserGroupIcon} />
                 </div>
             </div>
-            {/* HeaderCenter */}
 
+            <div className="flex items-center sm:space-x-2 justify-end">
+                {/* Profile Pic */}
 
-            {/* HeaderRight */}
+                <p className="font-semi-bold pr-3 whitespace-nowrap">Mike Torres
+                </p>
+                <ViewGridIcon className="icon" />
+                <ChatIcon className="icon" />
+                <BellIcon className="icon" />
+                <ChevronDownIcon className="icon" />
+            </div>
 
         </div>
     )
