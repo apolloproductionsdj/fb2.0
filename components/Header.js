@@ -68,7 +68,8 @@ function Header() {
                     layout="fixed"
                 />
 
-                <p className="font-semi-bold pr-3 whitespace-nowrap">Mike Torres
+                <p className="font-semi-bold pr-3 whitespace-nowrap">
+                    {session.user.name}
                 </p>
                 <ViewGridIcon className="icon" />
                 <ChatIcon className="icon" />
