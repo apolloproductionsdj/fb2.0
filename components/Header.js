@@ -19,7 +19,6 @@ import { useSession, signOut } from 'next-auth/client';
 
 function Header() {
     const [session] = useSession();
-    console.log(session);
 
     return (
         <div className="flex sticky top-0 z-50 bg-white items-center p-2 lg:px-5 shadow-md">
@@ -68,7 +67,7 @@ function Header() {
                     layout="fixed"
                 />
 
-                <p className="font-semi-bold pr-3 whitespace-nowrap">
+                <p className="hidden lg:inline-flex text-sm font-semibold pr-3 whitespace-nowrap">
                     {session.user.name}
                 </p>
                 <ViewGridIcon className="icon" />
