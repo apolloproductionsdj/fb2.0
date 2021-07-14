@@ -7,7 +7,7 @@ function Post({ email, image, message, name, postImage, timestamp }) {
             <div className="p-5 bg-white mt-5 
             rounded-t-2xl shadow-sm">
                 <div className="flex items-center space-x-2">
-                    <img
+                    <Image
                         className="rounded-full"
                         src={image}
                         width={40}
@@ -38,6 +38,7 @@ function Post({ email, image, message, name, postImage, timestamp }) {
                         src={postImage}
                         objectFit="cover"
                         layout="fill"
+                        alt=""
                     />
                 </div>
             )}

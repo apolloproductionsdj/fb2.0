@@ -10,6 +10,7 @@ function Contact({ src, name }) {
                 width={50}
                 height={50}
                 layout="fixed"
+                alt=""
             />
             <p>
                 {name}
